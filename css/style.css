@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    margin: 5em 2em 0 2em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.cover-img {
+    width: 100%;
+}
+
+.intro-section {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.7em;
+
+}
+
+.intro-title {
+    color: hsl(223, 47%, 23%);
+}
+
+.description {
+    color: #A0A5B5;
+}
+
+.plan-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em;
+    padding: 1em 1em;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.5em;
+}
+
+.music-img {
+    width: 3em;
+    height: 3em;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan p {
+    margin: 0.2em;
+    font-size: 13px;
+}
+
+.plan-title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.plan-price {
+    color: 	#A4A9BE;
+}
+
+.change-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    margin-left: 1em;
+}
+
+
+
