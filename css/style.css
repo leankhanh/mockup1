@@ -2,7 +2,12 @@
 
 
 body {
+    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Red Hat Display', sans-serif;
     background-color: hsl(225, 100%, 94%);
 }
@@ -10,9 +15,10 @@ body {
 .container {
     text-align: center;
     background-color: white;
-    margin: 5em 2em 0 2em;
+    max-width: 400px;
     border-radius: 1em;
-    overflow: hidden;
+    overflow: auto;
+    padding-bottom: 1em;
 }
 
 .cover-img {
@@ -20,14 +26,15 @@ body {
 }
 
 .intro-section {
-    width: 60%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 2em auto 0 auto;
     line-height: 1.7em;
-
 }
 
 .intro-title {
-    color: hsl(223, 47%, 23%);
+    color: hsl(220, 20%, 12%);
+    font-weight: 900;
+    /* font-size: 5em; */
 }
 
 .description {
@@ -36,10 +43,9 @@ body {
 
 .plan-section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 1.5em;
-    padding: 1em 1em;
+    margin: 1em;
+    padding: 1em;
     background-color: hsl(225, 100%, 98%);
     border-radius: 0.5em;
 }
@@ -52,6 +58,7 @@ body {
 .plan {
     display: flex;
     flex-direction: column;
+    margin-left: 1em;
 }
 
 .plan p {
@@ -72,7 +79,75 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: hsl(245, 75%, 52%);
-    margin-left: 1em;
+    margin-left: auto;
+}
+
+.change-link:hover {
+    text-decoration: none;
+    color: #756BF1;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 0.8em;
+    border: none;
+    box-shadow: 0 20px 10px -10px #E2E0FA;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background-color: #756BF1;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    padding: 1em 1.5em;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    color: black;
+}
+
+.attribution {
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 1440px) {
+    .plan-section {
+        margin: 2.5em;
+        padding: 1.2em 1.5em;
+        border-radius: 0.7em;
+    }
+
+    .plan p {
+        font-size: 15px;
+    }
+
+    .change-link {
+        font-size: 13px;
+    }
+
+    .button-section {
+        margin: 0 2.5em;
+        padding-bottom: 0.5em;
+    }
+
 }
 
 
